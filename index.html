@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kuldeep Patel - Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background: linear-gradient(45deg, #ff6347, #48c6ef);
+            color: #fff;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            animation: backgroundAnimation 15s ease-in-out infinite;
+        }
+
+        @keyframes backgroundAnimation {
+            0% {background: linear-gradient(45deg, #ff6347, #48c6ef);}
+            25% {background: linear-gradient(45deg, #f44336, #ffeb3b);}
+            50% {background: linear-gradient(45deg, #8e44ad, #3498db);}
+            75% {background: linear-gradient(45deg, #1abc9c, #f39c12);}
+            100% {background: linear-gradient(45deg, #ff6347, #48c6ef);}
+        }
+
+        .container {
+            max-width: 650px;
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            color: #ffeb3b;
+            animation: fadeIn 1s ease-out;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #ffeb3b;
+        }
+
+        .quote {
+            font-style: italic;
+            color: #ffeb3b;
+            margin-bottom: 30px;
+            font-size: 1.2em;
+            animation: fadeIn 2s ease-out;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            opacity: 0;
+            animation: fadeIn 2s ease-out forwards;
+        }
+
+        .contact-info {
+            margin-top: 25px;
+            font-size: 1.2em;
+        }
+
+        .contact-info a {
+            color: #ffeb3b;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #f44336;
+            text-decoration: underline;
+        }
+
+        .smooth-scroll {
+            overflow-y: auto;
+            max-height: 450px;
+            scroll-behavior: smooth;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2.5em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+
+        .telegram-link {
+            font-size: 1.1em;
+            margin-top: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Kuldeep Patel</h1>
+        <h2>Age: 17 | Tech Enthusiast & Traveler</h2>
+        <p class="quote">"The more I learn, the more I realize how much there is to explore." - Kuldeep Patel</p>
+        
+        <div class="smooth-scroll">
+            <p>I am a passionate student with an unyielding desire to learn and explore the tech world. I own a growing Telegram channel named "Data Hub," which has over 2,000 members, where I share insightful information related to tech. I have a unique skill set, including tunneling bugs, hosting to route internet through VPS, and much more.</p>
+            <p>My interests span across technology and travel. I'm constantly looking to expand my horizons, both through learning new tech skills and exploring the world.</p>
+        </div>
+
+        <div class="contact-info">
+            <p>Contact Information:</p>
+            <p>Email: <a href="mailto:opkt7258@gmail.com">opkt7258@gmail.com</a></p>
+            <p>Telegram: <a href="https://t.me/Unknown_9752" target="_blank">@Unknown_9752</a></p>
+            <p class="telegram-link">Join My Telegram Channel: <a href="https://t.me/QgsblD0gGKsxZDFl" target="_blank">Data Hub Channel</a></p>
+        </div>
+    </div>
+</body>
+</html>
